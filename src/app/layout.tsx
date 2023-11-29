@@ -20,10 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={roboto.className}>
-      <body>
+      <body className="scroll-smooth transition-all delay-100">
         <div className="mt-6 mx-16">
           <Header />
-          {children}
+          <div className="mt-28">{children}</div>
           <Footer />
         </div>
       </body>

@@ -4,11 +4,16 @@ import Par from "@/components/Par";
 
 export default function Home() {
   return (
-    <div className="flex justify-between ml-6">
-      <div>
-        <PageHeader title="About"></PageHeader>
-        <div className="flex flex-col gap-8 max-w-[500px]">
-          <div className="max-w-[500px] mb-10">
+    <div className="flex justify-between text-[14px]">
+      <div className="flex flex-col gap-2 flex-1">
+        <a href="#about">About</a>
+        <a href="#rob">Rob Johnston</a>
+        <a href="#scott">Scott Autridge</a>
+      </div>
+      <div className="flex-1">
+        <div className="flex flex-col gap-8 mx-auto">
+          <PageHeader title="About"></PageHeader>
+          <div id="about" className="max-w-[500px] mb-10">
             <p>
               2a Design is focused on delivering conscientious designs casting
               over the Coromandel & Hauraki regions.
@@ -28,8 +33,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div>
-            <div className="mb-4">
+          <div className="flex flex-col gap-4">
+            <div id="rob" className="my-4">
               <h2 className="text-[24px]">
                 <Par />
                 <b>Rob</b> Johnston
@@ -49,10 +54,18 @@ export default function Home() {
               Rob is an enthusiastic member of the Thames Society of Arts and is
               an elected member of the Thames Community Board.
             </p>
+
+            <Image
+              src={"/Rob.png"}
+              alt={"Rob"}
+              width="400"
+              className=""
+              height="783"
+            />
           </div>
 
-          <div>
-            <div className="mb-4">
+          <div className="flex flex-col gap-4">
+            <div id="scott" className="mb-4">
               <h2 className="text-[24px]">
                 <Par />
                 <b>Scott</b> Autridge
@@ -73,24 +86,22 @@ export default function Home() {
               architectural documentation, detailing & 3D modelling for each
               project.{" "}
             </p>
+            <Image
+              src={"/Scott2.jpeg"}
+              alt={"Scott"}
+              width="400"
+              className=""
+              height="783"
+            />
           </div>
         </div>
         <p className="mt-20">
-          Feel free to get in touch with any inquiries about our services.{" "}
-          <br />
-          If you have specific needs, don't hesitate to ask, and we'll do our
-          best to help you.
+          Feel free to get in touch with any inquiries about our services. If
+          you have specific needs, don't hesitate to ask, and we'll do our best
+          to help you.
         </p>
       </div>
-      <div className="mt-[420px]">
-        <Image
-          src="/2adesign.png"
-          alt="2a desgn"
-          width="576"
-          height="861"
-          className="align-self-start h-[861px] w-[576px]"
-        />
-      </div>
+      <div className="flex-1"></div>
     </div>
   );
 }
