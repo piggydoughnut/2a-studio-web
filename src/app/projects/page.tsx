@@ -24,7 +24,13 @@ const Tile = ({
 }) => (
   <div id={id} className="">
     <ProjectTitle title={title} />
-    <Image src={image} alt={image} width="400" height="220" className="" />
+    <Image
+      src={image}
+      alt={image}
+      width="400"
+      height="220"
+      className="grayscale hover:grayscale-0"
+    />
   </div>
 );
 
@@ -128,16 +134,16 @@ export default function Home() {
     }
   }, [selectedType]);
   return (
-    <div className="flex  ">
-      <div className="flex flex-col gap-10 flex-1">
+    <div className="flex">
+      <div className="hidden sm:flex flex-col gap-10 flex-1">
         <div className="flex flex-col gap-1">
-          <p className="opacity-60">projects by name</p>
+          <p className="opacity-60 text-[14px]">projects by name</p>
           {projectsList.map((line) => (
             <CustomLink href={line.id}>{line.title}</CustomLink>
           ))}
         </div>
         <div>
-          <p className="opacity-60">projects by type</p>
+          <p className="opacity-60 text-[14px]">projects by type</p>
           <div className="flex flex-col gap-1">
             <CustomLink onClick={() => setSelectedType("")}>All</CustomLink>
             <CustomLink onClick={() => setSelectedType(Types.Residential)}>
@@ -160,7 +166,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="flex-1"></div>
+      <div className="hidden sm:flex flex-1"></div>
     </div>
   );
 }

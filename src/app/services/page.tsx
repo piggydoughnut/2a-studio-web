@@ -30,8 +30,8 @@ const Service = ({
 
 export default function Home() {
   return (
-    <div className="flex justify-between text-[14px]">
-      <div className="flex flex-col gap-2  flex-1">
+    <div className="flex justify-between text-[16px]">
+      <div className="hidden sm:flex flex-col gap-2  flex-1">
         {[
           { href: "#preliminary", label: "Preliminary Concept & Design" },
           { href: "#developed", label: "Developed Design" },
@@ -99,7 +99,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="flex-1"></div>
+      <div className="hidden sm:flex flex-1"></div>
     </div>
   );
 }

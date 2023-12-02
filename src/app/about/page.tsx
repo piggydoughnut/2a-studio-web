@@ -59,7 +59,7 @@ export default function Home() {
               src={"/Rob.png"}
               alt={"Rob"}
               width="400"
-              className=""
+              className="grayscale hover:grayscale-0"
               height="783"
             />
           </div>
@@ -87,10 +87,10 @@ export default function Home() {
               project.{" "}
             </p>
             <Image
-              src={"/Scott2.jpeg"}
+              src={"/Scott.png"}
               alt={"Scott"}
               width="400"
-              className=""
+              className="grayscale hover:grayscale-0"
               height="783"
             />
           </div>

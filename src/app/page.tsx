@@ -21,7 +21,7 @@ export default function Home() {
         src={"/florist.png"}
         width="1000"
         height="600"
-        className="float-right"
+        className="float-right grayscale hover:grayscale-0"
       />
     </div>
   );
