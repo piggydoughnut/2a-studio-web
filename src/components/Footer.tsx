@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { company } from "@/config";
 import { inriaSans } from "@/styles/fonts";
 import location from "../../public/location.svg";
 import mail from "../../public/mail.svg";
@@ -10,25 +11,25 @@ const Separator = ({ className }: { className: string }) => (
 );
 
 const Footer = () => (
-  <footer className="h-12 left-0 bottom-4 pb-10 pt-20 w-full flex justify-start sm:justify-center">
+  <footer className="h-12 left-0 bottom-4 pb-10 pt-10 w-full flex justify-start sm:justify-center bg-accents-secondary">
     {" "}
     <div className={inriaSans.className}>
       <div className="flex flex-col sm:flex-row gap-4">
         <div className="flex  gap-2">
           <Image alt="2aLogo" src={location} width="24" />
           <Link href="https://maps.app.goo.gl/CpZJZ6BxZaatB9m16">
-            209 Rolleston Street, Thames
+            {company.address}
           </Link>
         </div>
         <Separator className="hidden sm:block" />
         <div className="flex gap-2">
           <Image alt="2aLogo" src={phone} width="24" />
-          <p>021 780 989</p>
+          <p>{company.phone}</p>
         </div>
         <Separator className="hidden sm:block" />
         <div className="flex  gap-2">
           <Image alt="2aLogo" src={mail} width="24" />
-          <Link href="mailto:office@2adesign.co.nz">office@2adesign.co.nz</Link>
+          <Link href={`mailto:${company.email}`}>{company.email}</Link>
         </div>
       </div>
     </div>

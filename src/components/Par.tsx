@@ -1,3 +1,5 @@
-const Par = () => <div className="w-6 h-1 bg-black"></div>;
+const Par = ({ black }: { black?: boolean }) => (
+  <div className={`w-6 h-1 ${black ? "bg-black" : "bg-accents-heavy"}`}></div>
+);
 
 export default Par;

@@ -13,7 +13,7 @@ const CustomLink = ({
 }) => (
   <Link
     className={`hover:opacity-90 hover:underline hover:underline-offset-4 decoration-2 ${
-      selected ? "text-orange-500" : ""
+      selected ? "text-accents-heavy" : ""
     }`}
     href={href}
     onClick={onClick}

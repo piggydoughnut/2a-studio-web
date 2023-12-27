@@ -11,6 +11,17 @@ const config: Config = {
       fontFamily: {
         workSans: ["Work Sans", "sans-serif"],
       },
+      fontSize: {
+        detail: "14px",
+      },
+      colors: {
+        accents: {
+          heavy: "#F17A16",
+          main: "#F9C193",
+          secondary: "#FEF1E6",
+        },
+        "raisin-black": "#1F1F23",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

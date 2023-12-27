@@ -19,11 +19,13 @@ const Service = ({
     <div className="flex flex-col gap-2" id={id}>
       <div className="flex flex-col">
         <Par />
-        <h2 className="text-[16px]">
+        <h3 className="text-accents-heavy">
           <b>{titleP1}</b> {titleP2}
-        </h2>
+        </h3>
       </div>
-      <div className="mt-2 leading-6 text-[14px]">{children}</div>
+      <div className="mt-2 leading-6 text-detail flex flex-col gap-2">
+        {children}
+      </div>
     </div>
   );
 };
@@ -52,7 +54,7 @@ export default function Home() {
             <p>Confirmation of building and design scope, </p>
             <p>Development of design brief </p>
             <p>Building preliminary research portfolio</p>
-            <ul className="list-disc list-inside">
+            <ul className="list-disc list-inside  text-[16px]">
               <li>site research</li>
               <li>compliance requirements, </li>
               <li>material </li>

@@ -1,5 +1,5 @@
 const PageHeader = ({ title }: { title: string }) => {
-  return <h1 className="text text-[18px]">{title}</h1>;
+  return <h4>{title}</h4>;
 };
 
 export default PageHeader;

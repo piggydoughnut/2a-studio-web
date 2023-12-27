@@ -4,7 +4,7 @@ import Par from "@/components/Par";
 
 export default function Home() {
   return (
-    <div className="flex justify-between text-[14px]">
+    <div className="flex justify-between">
       <div className="flex flex-col gap-2 flex-1">
         <a href="#about">About</a>
         <a href="#rob">Rob Johnston</a>
@@ -35,10 +35,10 @@ export default function Home() {
 
           <div className="flex flex-col gap-4">
             <div id="rob" className="my-4">
-              <h2 className="text-[24px]">
+              <h3 className="tracking-wide text-accents-heavy">
                 <Par />
                 <b>Rob</b> Johnston
-              </h2>
+              </h3>
               <p className="opacity-70 tracking-widest">
                 BBSc. 1995 , BArch. 1997.
               </p>
@@ -66,10 +66,10 @@ export default function Home() {
 
           <div className="flex flex-col gap-4">
             <div id="scott" className="mb-4">
-              <h2 className="text-[24px]">
+              <h3 className="tracking-wide text-accents-heavy">
                 <Par />
                 <b>Scott</b> Autridge
-              </h2>
+              </h3>
               <p className="opacity-70 tracking-widest">
                 Cert. (Carpentry). 2008,BAS. 2012 ,<br />
                 M.A. 2014, M.Arch (prof). 2015.
@@ -95,7 +95,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <p className="mt-20">
+        <p className="my-20">
           Feel free to get in touch with any inquiries about our services. If
           you have specific needs, don't hesitate to ask, and we'll do our best
           to help you.
