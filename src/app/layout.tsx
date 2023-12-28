@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className="scroll-smooth transition-all delay-100 pt-0 sm:pt-6  flex flex-col h-screen justify-between">
         <div className="mx-4 sm:mx-16">
           <Header />
-          <div className="mt-10 sm:mt-28">{children}</div>
+          <div className="mt-10 sm:mt-28 relative z-[-1]">{children}</div>
         </div>
         <Footer />
       </body>

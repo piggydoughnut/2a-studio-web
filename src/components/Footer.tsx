@@ -11,10 +11,10 @@ const Separator = ({ className }: { className: string }) => (
 );
 
 const Footer = () => (
-  <footer className="h-12 left-0 bottom-4 pb-10 pt-10 w-full flex justify-start sm:justify-center bg-accents-secondary">
+  <footer className="h-[170px] sm:h-12 pb-10 pt-10 w-full flex justify-start sm:justify-center bg-accents-secondary">
     {" "}
     <div className={inriaSans.className}>
-      <div className="flex flex-col sm:flex-row gap-4">
+      <div className="flex flex-col sm:flex-row ml-4 sm:ml-0 gap-4">
         <div className="flex  gap-2">
           <Image alt="2aLogo" src={location} width="24" />
           <Link href="https://maps.app.goo.gl/CpZJZ6BxZaatB9m16">

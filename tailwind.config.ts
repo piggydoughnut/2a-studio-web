@@ -12,6 +12,10 @@ const config: Config = {
         workSans: ["Work Sans", "sans-serif"],
       },
       fontSize: {
+        h1: "60px",
+        h2: "44px",
+        h3: "24px",
+        h4: "18px",
         detail: "14px",
       },
       colors: {

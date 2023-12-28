@@ -3,9 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 import { Spin as Hamburger } from "hamburger-react";
-import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/logov2-1.svg";
 import { useRouter } from "next/navigation";
 
 const Burger = ({ menu }: { menu: Array<{ name: string; url: string }> }) => {
@@ -51,7 +49,7 @@ const Burger = ({ menu }: { menu: Array<{ name: string; url: string }> }) => {
   }, [listeningEnabled, listening]);
 
   return (
-    <div className="flex flex-row justify-end z-50">
+    <div className="flex flex-row justify-end z-100">
       <div className="flex flex-row pr-6 z-10">
         <Hamburger
           // @ts-ignore

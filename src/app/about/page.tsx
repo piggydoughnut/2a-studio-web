@@ -5,7 +5,7 @@ import Par from "@/components/Par";
 export default function Home() {
   return (
     <div className="flex justify-between">
-      <div className="flex flex-col gap-2 flex-1">
+      <div className="hidden sm:flex flex-col gap-2 flex-1 ">
         <a href="#about">About</a>
         <a href="#rob">Rob Johnston</a>
         <a href="#scott">Scott Autridge</a>
@@ -101,7 +101,7 @@ export default function Home() {
           to help you.
         </p>
       </div>
-      <div className="flex-1"></div>
+      <div className="flex-1 hidden sm:flex "></div>
     </div>
   );
 }

@@ -94,7 +94,7 @@ export default function Home() {
             <p>Variation certificates</p>
           </Service>
 
-          <p className="opacity-70">
+          <p className="opacity-70 mb-10">
             Feel free to inquire about our services. <br />
             The provided list is not comprehensive, and if you don't see your
             specific request, we could still potentially assist you.
