@@ -52,7 +52,7 @@ const Header = () => {
           onClick={() => router.push("/")}
           className="hover:cursor-pointer"
         />
-        <div className="self-start ">
+        <div className="self-start">
           <Burger
             menu={[
               { name: "About", url: "/about" },

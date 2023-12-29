@@ -17,7 +17,7 @@ const Burger = ({ menu }: { menu: Array<{ name: string; url: string }> }) => {
   const c =
     "bg-white w-full h-full pt-24 pb-12 ease-linear transition absolute overflow-hidden";
   const classStyle = isOpen
-    ? " translate-x-0 " + c
+    ? " translate-x-0 z-10 " + c
     : c + " translate-x-[-100%] ";
 
   useEffect(() => {
@@ -49,8 +49,8 @@ const Burger = ({ menu }: { menu: Array<{ name: string; url: string }> }) => {
   }, [listeningEnabled, listening]);
 
   return (
-    <div className="flex flex-row justify-end z-100">
-      <div className="flex flex-row pr-6 z-10">
+    <div className="flex flex-row justify-end">
+      <div className="flex flex-row pr-6 z-20">
         <Hamburger
           // @ts-ignore
           className="hamburger-react"
