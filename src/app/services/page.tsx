@@ -33,14 +33,16 @@ const Service = ({
 export default function Home() {
   return (
     <div className="flex justify-between text-[16px]">
-      <div className="hidden sm:flex flex-col gap-2  flex-1">
+      <div className="hidden md:flex flex-col gap-2  flex-1">
         {[
           { href: "#preliminary", label: "Preliminary Concept & Design" },
           { href: "#developed", label: "Developed Design" },
           { href: "#docs", label: "Architectural Documentation" },
           { href: "#contract", label: "Contract Works Administration" },
         ].map((a) => (
-          <CustomLink href={a.href}>{a.label}</CustomLink>
+          <CustomLink href={a.href} key={a.label}>
+            {a.label}
+          </CustomLink>
         ))}
       </div>
       <div className="flex flex-col gap-8 flex-1">
@@ -101,7 +103,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="hidden sm:flex flex-1"></div>
+      <div className="flex-1 hidden lg:flex "></div>
     </div>
   );
 }

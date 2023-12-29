@@ -251,7 +251,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="hidden sm:flex flex-1"></div>
+      <div className="flex-1 hidden lg:flex "></div>
     </div>
   );
 }

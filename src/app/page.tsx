@@ -20,7 +20,7 @@ export default function Home() {
           construction administration.{" "}
         </h3>
       </div>
-      <div className="hidden sm:flex flex-1"></div>
+      <div className="hidden md:flex flex-1"></div>
 
       <div className="flex flex-col sm:flex-row justify-end items-center">
         <p className="hidden sm:block">

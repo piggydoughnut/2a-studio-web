@@ -4,7 +4,7 @@ import { company } from "@/config";
 export default function Home() {
   return (
     <div className="flex justify-between">
-      <div className="hidden sm:flex flex-1"></div>
+      <div className="flex-1 hidden lg:flex "></div>
       <div className="flex flex-col gap-8 flex-1 h-[100%]">
         <PageHeader title="Contact" />
         <p className="mt-4">
@@ -18,7 +18,7 @@ export default function Home() {
           <h4>{company.email}</h4>
         </div>
       </div>
-      <div className="hidden sm:flex flex-1"></div>
+      <div className="flex-1 hidden lg:flex "></div>
     </div>
   );
 }
