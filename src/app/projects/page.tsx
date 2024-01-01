@@ -209,7 +209,6 @@ export default function Home() {
               selected={selectedType === ""}
               onClick={() => {
                 setSelectedType("");
-                setSelectedId("");
               }}
             >
               All
@@ -219,7 +218,6 @@ export default function Home() {
               selected={selectedType === Types.Residential}
               onClick={() => {
                 setSelectedType(Types.Residential);
-                setSelectedId("");
               }}
             >
               {Types.Residential}
@@ -229,7 +227,6 @@ export default function Home() {
               selected={selectedType === Types.Commercial}
               onClick={() => {
                 setSelectedType(Types.Commercial);
-                setSelectedId("");
               }}
             >
               {Types.Commercial}
@@ -238,7 +235,6 @@ export default function Home() {
               selected={selectedType === Types.Educational}
               onClick={() => {
                 setSelectedType(Types.Educational);
-                setSelectedId("");
               }}
             >
               {Types.Educational}
