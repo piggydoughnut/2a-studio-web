@@ -39,7 +39,15 @@ const Tile = ({
   </div>
 );
 
-const projectsList = [
+type ProjectDetail = {
+  id: string;
+  title: string;
+  detail?: string | React.ReactNode;
+  type: string;
+  image: string;
+};
+
+const projectsList: Array<ProjectDetail> = [
   {
     id: "1_container_florist",
     title: "Container Florist",
@@ -163,16 +171,18 @@ const ProjectTitle = ({
   );
 };
 export default function Home() {
-  const [projects, setProjects] = useState(projectsList);
+  const [projects, setProjects] = useState<Array<ProjectDetail>>();
   const [selectedType, setSelectedType] = useState("");
   const [selectedId, setSelectedId] = useState("");
 
   useEffect(() => {
-    setProjects(projectsList.filter((p) => p.type === selectedType));
-    if (!selectedType) {
+    if (selectedType) {
+      setProjects(projectsList.filter((p) => p.type === selectedType));
+    } else {
       setProjects(projectsList);
     }
   }, [selectedType]);
+
   return (
     <div className="flex">
       <div className="hidden sm:flex flex-col gap-10 flex-1">
@@ -239,7 +249,7 @@ export default function Home() {
       <div className="flex flex-col  flex-1">
         <PageHeader title="Projects"></PageHeader>
         <div className="flex flex-col gap-20 py-6 scroll-mt-4 overflow-auto">
-          {projects.map((item) => (
+          {projects?.map((item) => (
             <Tile
               key={item.id}
               selected={selectedId === item.id}
